@@ -13,6 +13,20 @@ public class PrimeNumber {
 		 *
 		 */
 
+		int count = 0;
+		for (int i = 2; i < 1000000; i++) {
+
+			boolean isDivisible = false;
+			for (int j = 2; j < i / 2; j++)
+				if (i % j == 0) {
+					isDivisible = true;
+					break;
+				}
+
+			if (!isDivisible)
+				count++;
+		}
+		System.out.println("Number of prime number between 1 and 1 million is " + count);
 	}
 
 }

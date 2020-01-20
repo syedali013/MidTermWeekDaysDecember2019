@@ -1,7 +1,24 @@
 package math.problems;
 
-
+/**
+ * Created by mrahman on 04/02/18.
+ */
 public class Factorial {
+
+    public static int factorialRecursive(int n) {
+
+        if( n == 1)
+            return 1;
+        return n * factorialRecursive(n - 1);
+    }
+
+    public static int factorialIterative(int n) {
+
+        int prod = 1;
+        for(int i = 1; i <= n; i++)
+            prod *= i;
+        return prod;
+    }
 
     public static void main(String[] args) {
         /*
@@ -9,6 +26,9 @@ public class Factorial {
          * Write a java program to find Factorial of a given number using Recursion as well as Iteration.
          *
          */
+        int n = 5;
+        System.out.println(factorialRecursive(n));
+        System.out.println(factorialIterative(n));
 
     }
 }

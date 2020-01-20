@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="mySql">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/lib/mySql" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/lib/poi-4.1.1/docs/apidocs/dev" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lib/mySql" recursive="false" />
+  </library>
+</component>
